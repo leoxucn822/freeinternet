@@ -7,7 +7,7 @@ import (
 
 type employee struct {
 	Name string `json:"姓名"`
-	Age int `json:"年龄"`
+	Age  int    `json:"年龄"`
 }
 
 func main() {
@@ -22,4 +22,7 @@ func main() {
 	}
 	fmt.Println(string(data))
 	fmt.Println(f.Name)
+
+	var a1 = employee{"xu leo", 18}
+	fmt.Println(a1)
 }
